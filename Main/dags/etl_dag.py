@@ -24,7 +24,7 @@ def extract_and_load():
 
     @task()
     def gcp_load(tbl_dict: dict):
-        credentials = service_account.Credentials.from_service_account_file("gcp-key.json")
+        credentials = service_account.Credentials.from_service_account_file("/opt/airflow/gcp-key.json")
         project_id = "your_project_id"
         dataset_ref = "your_dataset"
 
