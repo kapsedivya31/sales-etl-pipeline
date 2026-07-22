@@ -1,0 +1,21 @@
+﻿# GCP credentials — never commit real secrets
+gcp-key.json
+*.json
+!package.json
+
+# Airflow runtime junk (created automatically when containers run)
+Main/airflow_installation/logs/
+Main/airflow_installation/plugins/
+Main/airflow_installation/.env
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
